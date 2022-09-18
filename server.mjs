@@ -64,7 +64,7 @@ app.post("/login", (req, res) => {
               "password": "12345"
             }`);
     return;
-  }
+}
   let isFound = false;
   for (let i = 0; i < userBase.length; i++) {
     if (userBase[i].email === body.email) {
