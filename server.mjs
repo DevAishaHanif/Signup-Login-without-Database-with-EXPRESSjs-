@@ -38,7 +38,7 @@ app.post("/signup", (req, res) => {
   }
   if (isFound) {
     res.status(400).send({
-      message: `email ${body.email} Alredy Exist :-(`
+      message: `email ${body.email} Already Exist :-(`
     });
     return;
   }

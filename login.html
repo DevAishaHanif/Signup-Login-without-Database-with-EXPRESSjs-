@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <title>LOGIN PAGE</title>
+</head>
+
+<body>
+    <div class="Wrapper">
+        <div class="Container">
+            <h1 class="heading"><i>Login For Free</i></h1>
+            <form onsubmit="login(); return false;">
+                <div class="control">
+                    <p><label>E-mail Address<span>*</span></label></p>
+                    <input type="email" name="email" id="email" placeholder="Your E-mail" value="" autocomplete="off"
+                        required />
+                </div>
+                <div class="control">
+                    <p><label>Create Password<span>*</span></label></p>
+                    <input type="Password" name="password" id="password" placeholder="Your Password" value=""
+                        autocomplete="off" required />
+                </div><br>
+                <input type="submit" value="login" />
+                <p class="ftext">
+                    <a id="linkCreateAccount" href="signup.html" class="flinks">Don't have an account? Sign up for an
+                        account..</a>
+                </p>
+            </form>
+            <p id="message"></p>
+
+        </div>
+    </div>
+
+                              <!-- JAVASCRIPT CODE -->
+
+<script>
+ function login() {
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+
+
+    if(password !== password) {
+       document.querySelector("#message").innerHTML = 'PASSWORDS do not match :-( please try again..';
+       return;
+    }
+    if(email !== email) {
+       document.querySelector("#message").innerHTML = 'E-MAIL do not match :-( please try again..';
+       return;
+    }
+    
+    axios.post('https://signup-form-without-database.herokuapp.com/login',{
+    email,
+    password,
+ })
+
+ .then(function (response) {
+        console.log(response.data);
+        document.querySelector("#message").innerHTML = response.data.message;
+    })
+    .catch(function (error) {
+        console.log(error.response.data);
+        document.querySelector("#message").innerHTML = error.response.data.message;
+    })
+}
+
+
+
+  </script>
+ </body>
+</html>

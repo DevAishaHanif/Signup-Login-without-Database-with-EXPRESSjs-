@@ -5,34 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
     <title>SIGNUP PAGE</title>
 </head>
 <body>
-    <h1>SIGNUP FORM :</h1>
+    <h1><i>SIGNUP FORM :</i></h1>
         <form onsubmit="signup(); return false;">
-
-         <label for="firstName*">First Name*</label>
-         <input type="text" id="firstName" required/>
-         <br/>
-
-         <label for="lastName*">Last Name*</label>
-         <input type="text" id="lastName" required/>
-         <br/>
-
-         <label for="email*">Email*</label>
-         <input type="email" id="email" required/>
-         <br/>
-
-         <label for="password*">password*</label>
-         <input type="password" id="password" required/>
-         <br/>
-
-         <label for="confirm Password*">Confirm Password*</label>
-         <input type="password" id="confirmpassword" required/>
-         <br/>
-
-         <input type="submit" value="Signup"/>
+            <div class="control">
+                <p><label>First Name<span>*</span></label></p>
+                  <input type="text" name="name" id="firstName" placeholder="Your Full Name" value="" autocomplete="off" required />
+            </div>
+            <div class="control">
+                <p><label>Last Name<span>*</span></label></p>
+                  <input type="text" name="name" id="lastName" placeholder="Your Full Name" value="" autocomplete="off" required />
+            </div>
+            <div class="control">
+                <p><label>E-mail Address<span>*</span></label></p>
+                <input type="email" name="email" id="email" placeholder="Your E-mail" value="" autocomplete="off" required />
+           </div>
+           <div class="control">
+            <p><label>Create A Password<span>*</span></label></p>
+            <input type="Password" name="password" id="password" placeholder="Your Password" value="" autocomplete="off" required />
+       </div>
+           <div class="control">
+        <p><label>Confirm Password<span>*</span></label></p>
+        <input type="password" name="" id="confirmpassword" placeholder="Check your password" autocomplete="off" required />
+  </div><br/>
+      <input type="submit" value="Signup"/> 
+      
+         <p class="f.text">
+          <a class="flink" href="login.html" id="c.account">Already have an account? Login Here..</a>
+        </p>
    </form>
    <p id="message"></p>
 
