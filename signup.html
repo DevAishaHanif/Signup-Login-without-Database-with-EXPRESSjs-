@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>SIGNUP PAGE</title>
 </head>
 <body>
-    <h1><i>SIGNUP FORM :</i></h1>
+    <div class="Wrapper">
+    <div class="container">
+    <h1><i>SIGNUP FORM !!</i></h1>
         <form onsubmit="signup(); return false;">
             <div class="control">
                 <p><label>First Name<span>*</span></label></p>
@@ -16,7 +19,7 @@
             </div>
             <div class="control">
                 <p><label>Last Name<span>*</span></label></p>
-                  <input type="text" name="name" id="lastName" placeholder="Your Full Name" value="" autocomplete="off" required />
+                  <input type="text" name="name" id="lastName" placeholder="Your Last Name" value="" autocomplete="off" required />
             </div>
             <div class="control">
                 <p><label>E-mail Address<span>*</span></label></p>
@@ -30,15 +33,15 @@
         <p><label>Confirm Password<span>*</span></label></p>
         <input type="password" name="" id="confirmpassword" placeholder="Check your password" autocomplete="off" required />
   </div><br/>
-      <input type="submit" value="Signup"/> 
+      <input type="submit" value="SIGNUP" class="btn"/> 
       
          <p class="f.text">
-          <a class="flink" href="login.html" id="c.account">Already have an account? Login Here..</a>
+          <a class="flink" href="login.html">Already have an account? Login Here..</a>
         </p>
    </form>
-   <p id="message"></p>
-
-  
+   <h2 id="message"></h2>
+</div>
+</div> 
                      <!-- JAVASCRIPT CODE -->
     
 <script>
@@ -50,7 +53,7 @@
         var confirmpassword = document.getElementById("confirmpassword").value;
 
     if(password !== confirmpassword) {
-       document.querySelector("#message").innerHTML = 'PASSWORDS do not match :-( please try again..';
+       document.querySelector("#message").innerHTML = 'PASSWORDS do not match :-( please <br>try again..';
        return;
     }
 

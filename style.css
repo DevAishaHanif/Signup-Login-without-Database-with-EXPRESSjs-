@@ -1,0 +1,334 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: verdana, sans-serif;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.Wrapper {
+    width: 100%;
+}
+
+/*   Signup-form CSS    */
+.container {
+    width: 28%;
+    height: 595px;
+    margin-left: 35%;
+    box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+    margin-top: 1%;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    padding-top: 5px;
+}
+
+input[type="text"] {
+    width: 80%;
+    height: 30px;
+    border: none;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 8%;
+}
+
+input[type="password"] {
+    width: 80%;
+    height: 30px;
+    border: none;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 8%;
+}
+
+input[type="email"] {
+    width: 80%;
+    height: 30px;
+    border: none;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 8%;
+}
+
+input[type="number"] {
+    width: 80%;
+    height: 30px;
+    border: none;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 8%;
+}
+
+input[type="submit"] {
+    width: 40%;
+    height: 45px;
+    border: none;
+    background-color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.7);
+    transition: .5s ease;
+    margin-left: 30%;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: gray;
+    color: #fff;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #f1f1f1;
+    margin-left: 20px;
+}
+
+.flink {
+    margin-left: 30px;
+    color: #f1f1f1;
+}
+
+h2 {
+    color: #fff;
+    font-size: 10px;
+}
+
+/*    Login-Form CSS   */
+.Container {
+    width: 38%;
+    height: 360px;
+    margin-left: 30%;
+    box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+    margin-top: 1%;
+    border-radius: 10px;
+
+}
+
+.title {
+    color: #f1f1f1;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.control {
+    width: 100%;
+}
+
+.fbutton {
+    width: 80%;
+    margin-left: 38px;
+    border-radius: 5px;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.7);
+
+}
+
+.fbutton:hover {
+    background: darkgrey;
+    color: #fff;
+}
+
+.flinks {
+    text-align: center;
+    margin-left: 60px;
+    color: #f1f1f1;
+}
+
+h2 {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 80px;
+
+}
+
+/* MEDIA QUERIES for  SIGNUP FORM */
+/* 
+  ##Device = Most of the Smartphones Mobiles 
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 150px) and (max-width: 479px) {
+    .container {
+        width: 58%;
+        height: 700px;
+        margin-left: 20%;
+        box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+        margin-top: 1%;
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .flink {
+        margin-left: 20px;
+        color: #f1f1f1;
+    }
+
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 480px to 767px
+*/
+@media (min-width: 480px) and (max-width: 767px) {
+    .container {
+        width: 50%;
+        height: 700px;
+        margin-left: 25%;
+        box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+        margin-top: 1%;
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .flink {
+        margin-left: 30px;
+        color: #f1f1f1;
+    }
+}
+
+/* 
+  ##Device = Tablets, Ipads :
+  ##Screen = B/w 768px to 1024px :
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: 45%;
+        height: 700px;
+        margin-left: 30%;
+        box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+        margin-top: 1%;
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .flink {
+        margin-left: 30px;
+        color: #f1f1f1;
+    }
+
+}
+
+/* 
+  ##Device = Desktops: 
+  ##Screen = 1281px to higher resolution desktops :
+*/
+@media (min-width: 1024px) and (max-width: 1470px) {
+    .container {
+        width: 30%;
+        height: 700px;
+        margin-left: 30%;
+        box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+        margin-top: 1%;
+        border-radius: 10px;
+    }
+}
+
+/* MEDIA QUERIES for LOGIN FORM */
+/* 
+  ##Device = Most of the Smartphones Mobiles 
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 150px) and (max-width: 479px) {
+    .Container {
+        width: 58%;
+        height: 430px;
+        margin-left: 20%;
+        box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+        margin-top: 1%;
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .flinks{
+        margin-left: 20px;
+        color: #f1f1f1;
+    }
+
+}
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 480px to 767px
+*/
+@media (min-width: 480px) and (max-width: 767px) {
+    .Container {
+        width: 50%;
+        height: 430px;
+        margin-left: 25%;
+        box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+        margin-top: 1%;
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .flinks{
+        margin-left: 30px;
+        color: #f1f1f1;
+    }
+}
+/* 
+  ##Device = Tablets, Ipads :
+  ##Screen = B/w 768px to 1024px :
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .Container {
+        width: 45%;
+        height: 430px;
+        margin-left: 30%;
+        box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+        margin-top: 1%;
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .flinks{
+        margin-left: 30px;
+        color: #f1f1f1;
+    }
+
+}
+/* 
+  ##Device = Desktops: 
+  ##Screen = 1281px to higher resolution desktops :
+*/
+@media (min-width: 1024px) and (max-width: 1470px) {
+    .Container {
+        width: 45%;
+        height: 430px;
+        margin-left: 30%;
+        box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+        margin-top: 1%;
+        border-radius: 10px;
+    }
+}
+
+
+

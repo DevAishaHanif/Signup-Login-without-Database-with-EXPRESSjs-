@@ -74,7 +74,7 @@ app.post("/login", (req, res) => {
           firstName: userBase[i].firstName,
           lastName: userBase[i].lastName,
           email: userBase[i].email,
-          message: "Congratulations!! Login successful :-) ..."
+          message: "Congratulations!! Login successful :-)"
         })
         return;
 
